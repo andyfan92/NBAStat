@@ -48,13 +48,13 @@ Logout does NOT clear the favorite team information from the local
 After the logout process the server will respond with a redirect to the Home Page
 
 ### All Teams
-In the home viewcontroller add a table view which would populate the list of teams that match your search
+In the home viewcontroller add a table view which would populate the list of teams that match your search. Use API https://api-nba-v1.p.rapidapi.com/teams/league/standard to acquire all team.
 
 ### Team Players
-When the app starts up the first table view controller will read teams and then get the team information and team player information.
+When the app starts up the first table view controller will read teams and then get the team information and team player information. Use API https://api-nba-v1.p.rapidapi.com/players/teamId/%7Bteamid%7D to acquire target team's player information and use API https://api-nba-v1.p.rapidapi.com/teams/teamId/null to acquire logo and other information
 
 ### My favorite team
-User can follow the team they interested, and some of the value will be saved locally.
+User can follow the team they interested, and some of the information will be stored locally to prevent too much network communication.
 
 
 
